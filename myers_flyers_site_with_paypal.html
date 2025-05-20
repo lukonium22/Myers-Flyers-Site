@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myers Flyers Tutoring Services</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; scroll-behavior: smooth; }
+        header { background: #003366; color: white; padding: 20px 0; text-align: center; position: sticky; top: 0; z-index: 1000; }
+        header h1 { margin: 0; font-size: 28px; }
+        nav a { margin: 0 15px; color: white; text-decoration: none; font-weight: bold; }
+        section { padding: 60px 20px; max-width: 1000px; margin: auto; }
+        h2 { color: #003366; }
+        .hero { background: #e6f2ff; padding: 80px 20px; text-align: center; }
+        .hero h2 { font-size: 36px; }
+        .button { display: inline-block; margin-top: 20px; padding: 10px 20px; background: #003366; color: white; text-decoration: none; border-radius: 4px; }
+        form input, form textarea, form select { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 4px; }
+        footer { background: #003366; color: white; text-align: center; padding: 20px 0; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Myers Flyers Tutoring Services</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#booking">Booking</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Achieve Your Aviation Goals</h2>
+    <p>Personalized flight instruction from a Certified Flight Instructor with experience across multiple ratings.</p>
+    <a href="#booking" class="button">Book a Session</a>
+</section>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>I am a highly motivated and energetic pilot who graduated from Averett University with a B.S. in Aerospace Management: Flight Operations.</p>
+    <p>I’m a Certified Flight Instructor with the following ratings:</p>
+    <ul>
+        <li>CFI-I (Instrument Instructor)</li>
+        <li>CFI-A (Airplane)</li>
+        <li>Multi-Engine</li>
+        <li>Commercial</li>
+        <li>Instrument</li>
+    </ul>
+</section>
+
+<section id="services">
+    <h2>Services Offered</h2>
+    <ul>
+        <li><strong>Private Pilot:</strong> Learn the fundamentals and prepare for your checkride.</li>
+        <li><strong>Instrument:</strong> Master IFR navigation, approaches, and regulations.</li>
+        <li><strong>CFI Prep:</strong> Get ready to teach with confidence and pass your CFI checkride.</li>
+    </ul>
+</section>
+
+<section id="booking">
+    <h2>Book a Session</h2>
+    <form>
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="background">Tell me about your flight experience</label>
+        <textarea id="background" name="background" rows="4"></textarea>
+
+        <label for="service">Which service are you interested in?</label>
+        <select id="service" name="service">
+            <option value="private">Private Pilot</option>
+            <option value="instrument">Instrument</option>
+            <option value="cfi">CFI Prep</option>
+        </select>
+
+        <input type="submit" value="Submit Inquiry">
+    </form>
+
+    <p>After submitting, you’ll receive a follow-up to confirm payment and schedule.</p>
+
+    <script 
+      src="https://www.paypal.com/sdk/js?client-id=BAAks_Y8UGvFZJT-yuc3TIQaLZX6sCtOdRkMhy4nL55EfomRoSXK_N5eU93UksfmsMYhP9qXvdliOeyaVY&components=hosted-buttons&enable-funding=venmo&currency=USD">
+    </script>
+    <div id="paypal-container-DRNZWLULTQVHJ"></div>
+    <script>
+      paypal.HostedButtons({
+        hostedButtonId: "DRNZWLULTQVHJ",
+      }).render("#paypal-container-DRNZWLULTQVHJ")
+    </script>
+    <br><br>
+    <a href="#" class="button">Schedule via Calendly</a>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+        <label for="contact-name">Name</label>
+        <input type="text" id="contact-name" name="contact-name" required>
+
+        <label for="contact-email">Email</label>
+        <input type="email" id="contact-email" name="contact-email" required>
+
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <input type="submit" value="Send Message">
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2025 Myers Flyers Tutoring Services</p>
+</footer>
+
+</body>
+</html>
